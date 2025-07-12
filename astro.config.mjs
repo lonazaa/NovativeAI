@@ -3,8 +3,7 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://lonazaa.github.io/NovativeAI',
-  base: '/NovativeAI',
+  site: 'http://novativeai.com',
   build: {
     assets: 'assets',
   },
