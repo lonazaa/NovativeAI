@@ -2,6 +2,8 @@
 
 A modern website built with Astro for NovativeAI, showcasing AI solutions and services.
 
+<!-- Last updated for GitHub Pages deployment -->
+
 ## 🚀 Quick Start
 
 ### Prerequisites
