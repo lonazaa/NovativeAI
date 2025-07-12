@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>NovativeAI - AI Automation Agency</title>
+		<meta name="description" content="AI systems that work for you 24/7. Save time, cut costs, grow faster with AI agents and automation built for your business." />
+		
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html {
+		scroll-behavior: smooth;
+		overflow-x: hidden;
+	}
+
+	body {
+		font-family: 'Inter', system-ui, -apple-system, sans-serif;
+		background: 
+			radial-gradient(ellipse at top left, rgba(245, 208, 66, 0.08) 0%, transparent 50%),
+			radial-gradient(ellipse at top right, rgba(245, 208, 66, 0.06) 0%, transparent 50%),
+			radial-gradient(ellipse at bottom center, rgba(245, 208, 66, 0.04) 0%, transparent 60%),
+			linear-gradient(180deg, #000000 0%, #0a0a0a 50%, #000000 100%);
+		background-attachment: fixed;
+		color: #ffffff;
+		line-height: 1.6;
+		overflow-x: hidden;
+		position: relative;
+	}
+
+	body::before {
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: 
+			radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+			radial-gradient(circle at 75% 75%, rgba(245, 208, 66, 0.03) 1px, transparent 1px),
+			linear-gradient(90deg, transparent 0%, rgba(245, 208, 66, 0.01) 50%, transparent 100%),
+			linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, 0.01) 50%, transparent 100%);
+		background-size: 120px 120px, 80px 80px, 100% 2px, 2px 100%;
+		pointer-events: none;
+		z-index: -1;
+		opacity: 0.6;
+	}
+
+	body::after {
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: 
+			linear-gradient(135deg, transparent 0%, rgba(245, 208, 66, 0.02) 25%, transparent 50%, rgba(245, 208, 66, 0.01) 75%, transparent 100%),
+			repeating-conic-gradient(from 0deg at 50% 50%, transparent 0deg, rgba(255, 255, 255, 0.005) 1deg, transparent 2deg);
+		pointer-events: none;
+		z-index: -1;
+		opacity: 0.8;
+	}
+
+	/* Smooth scroll for anchor links */
+	html {
+		scroll-padding-top: 80px;
+	}
+
+	/* Animation utilities */
+	.fade-in {
+		opacity: 0;
+		transform: translateY(30px);
+		transition: all 0.8s ease-out;
+	}
+
+	.fade-in.visible {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	.stagger-1 { transition-delay: 0.1s; }
+	.stagger-2 { transition-delay: 0.2s; }
+	.stagger-3 { transition-delay: 0.3s; }
+	.stagger-4 { transition-delay: 0.4s; }
+	.stagger-5 { transition-delay: 0.5s; }
+
+	/* Gold glow effect */
+	.gold-glow {
+		box-shadow: 0 0 20px rgba(245, 208, 66, 0.3);
+	}
+
+	.gold-glow:hover {
+		box-shadow: 0 0 30px rgba(245, 208, 66, 0.5);
+	}
+</style>

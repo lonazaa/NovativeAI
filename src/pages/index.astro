@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import WhatWeDo from '../components/WhatWeDo.astro';
+import Solutions from '../components/Solutions.astro';
+import OurWork from '../components/OurWork.astro';
+import CTA from '../components/CTA.astro';
+import FAQ from '../components/FAQ.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout>
+	<Header />
+	<main>
+		<Hero />
+		<WhatWeDo />
+		<Solutions />
+		<OurWork />
+		<CTA />
+		<FAQ />
+		<Contact />
+	</main>
+	<Footer />
+</Layout>
+
+<script>
+	// Scroll animations
+	document.addEventListener('DOMContentLoaded', function() {
+		const observerOptions = {
+			threshold: 0.1,
+			rootMargin: '0px 0px -50px 0px'
+		};
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('visible');
+				}
+			});
+		}, observerOptions);
+
+		// Observe all fade-in elements
+		const fadeElements = document.querySelectorAll('.fade-in');
+		fadeElements.forEach(el => observer.observe(el));
+
+		// Smooth scroll for navigation links
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+				const target = document.querySelector(this.getAttribute('href'));
+				if (target) {
+					target.scrollIntoView({
+						behavior: 'smooth',
+						block: 'start'
+					});
+				}
+			});
+		});
+
+		// Header background on scroll
+		const navMenu = document.querySelector('.nav-menu');
+		if (navMenu) {
+			window.addEventListener('scroll', () => {
+				if (window.scrollY > 100) {
+					navMenu.style.background = 'rgba(0, 0, 0, 0.95)';
+					navMenu.style.borderColor = 'rgba(245, 208, 66, 0.3)';
+				} else {
+					navMenu.style.background = 'rgba(0, 0, 0, 0.8)';
+					navMenu.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+				}
+			});
+		}
+	});
+</script>
+</Layout>

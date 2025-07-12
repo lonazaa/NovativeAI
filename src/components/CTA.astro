@@ -1,0 +1,337 @@
+---
+---
+
+<section class="integrations" id="integrations">
+	<div class="container">
+		<div class="integrations-content fade-in">
+			<div class="content-header">
+				<h2 class="integrations-title">It Sounded Complex.</h2>
+				<h3 class="integrations-subtitle">We Made It Seamless.</h3>
+			</div>
+			
+			<p class="integrations-description">
+				Supercharge your operations by effortlessly connecting our AI systems to the tools you already use. No disruption, no friction — just powerful automation that fits right into your workflow. Every solution we build is designed for smooth, stress-free integration.
+			</p>
+			
+			<div class="integration-visual">
+				<div class="integration-node center">
+					<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/>
+					</svg>
+					<div class="center-pulse"></div>
+				</div>
+				
+				<div class="integration-node top">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" fill="currentColor"/>
+					</svg>
+				</div>
+				
+				<div class="integration-node right">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" fill="currentColor"/>
+					</svg>
+				</div>
+				
+				<div class="integration-node bottom">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/>
+					</svg>
+				</div>
+				
+				<div class="integration-node left">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" fill="currentColor"/>
+					</svg>
+				</div>
+				
+				<div class="connection-line line-1"></div>
+				<div class="connection-line line-2"></div>
+				<div class="connection-line line-3"></div>
+				<div class="connection-line line-4"></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.integrations {
+		padding: 8rem 2rem;
+		background: 
+			radial-gradient(ellipse at center, rgba(245, 208, 66, 0.1) 0%, transparent 70%),
+			linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, transparent 50%);
+		position: relative;
+	}
+
+	.integrations::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: 
+			radial-gradient(circle at 25% 25%, rgba(245, 208, 66, 0.03) 1px, transparent 1px),
+			radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+		background-size: 80px 80px, 120px 120px;
+		pointer-events: none;
+		opacity: 0.6;
+	}
+
+	.container {
+		max-width: 900px;
+		margin: 0 auto;
+		position: relative;
+		z-index: 2;
+	}
+
+	.integrations-content {
+		background: 
+			linear-gradient(145deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		border-radius: 32px;
+		padding: 5rem 3rem;
+		backdrop-filter: blur(20px);
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.integrations-content::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: 
+			radial-gradient(circle at top center, rgba(245, 208, 66, 0.1) 0%, transparent 50%);
+		pointer-events: none;
+	}
+
+	.content-header {
+		margin-bottom: 2.5rem;
+		position: relative;
+		z-index: 2;
+	}
+
+	.integrations-title {
+		font-size: clamp(2.5rem, 5vw, 4rem);
+		font-weight: 800;
+		margin-bottom: 0.5rem;
+		color: #ffffff;
+		line-height: 1.1;
+	}
+
+	.integrations-subtitle {
+		font-size: clamp(2rem, 4vw, 3rem);
+		font-weight: 700;
+		background: linear-gradient(135deg, #F5D042 0%, #f0c935 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		line-height: 1.1;
+	}
+
+	.integrations-description {
+		font-size: 1.2rem;
+		color: rgba(255, 255, 255, 0.8);
+		line-height: 1.7;
+		margin-bottom: 4rem;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+		font-weight: 400;
+		position: relative;
+		z-index: 2;
+	}
+
+	.integration-visual {
+		position: relative;
+		width: 280px;
+		height: 280px;
+		margin: 0 auto;
+	}
+
+	.integration-node {
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		background: 
+			linear-gradient(145deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+		border: 2px solid rgba(255, 255, 255, 0.2);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: rgba(255, 255, 255, 0.7);
+		transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+		backdrop-filter: blur(10px);
+		cursor: pointer;
+	}
+
+	.integration-node.center {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: 
+			radial-gradient(circle, rgba(245, 208, 66, 0.3) 0%, rgba(245, 208, 66, 0.1) 100%);
+		border-color: rgba(245, 208, 66, 0.6);
+		color: #F5D042;
+		width: 80px;
+		height: 80px;
+		z-index: 3;
+		position: relative;
+	}
+
+	.center-pulse {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		height: 100%;
+		border: 2px solid rgba(245, 208, 66, 0.4);
+		border-radius: 50%;
+		transform: translate(-50%, -50%);
+		animation: pulse 2s infinite;
+	}
+
+	@keyframes pulse {
+		0% {
+			transform: translate(-50%, -50%) scale(1);
+			opacity: 1;
+		}
+		100% {
+			transform: translate(-50%, -50%) scale(1.5);
+			opacity: 0;
+		}
+	}
+
+	.integration-node.top {
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.integration-node.right {
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+	}
+
+	.integration-node.bottom {
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.integration-node.left {
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+	}
+
+	.connection-line {
+		position: absolute;
+		background: 
+			linear-gradient(90deg, rgba(245, 208, 66, 0.6) 0%, rgba(245, 208, 66, 0.2) 50%, rgba(245, 208, 66, 0.6) 100%);
+		height: 2px;
+		transform-origin: center;
+		overflow: hidden;
+	}
+
+	.connection-line::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+		animation: flow 3s infinite;
+	}
+
+	@keyframes flow {
+		0% { left: -100%; }
+		100% { left: 100%; }
+	}
+
+	.line-1 {
+		top: 50%;
+		left: 50%;
+		width: 110px;
+		transform: translate(-50%, -50%) rotate(-90deg);
+		animation-delay: 0s;
+	}
+
+	.line-2 {
+		top: 50%;
+		left: 50%;
+		width: 110px;
+		transform: translate(-50%, -50%) rotate(0deg);
+		animation-delay: 0.75s;
+	}
+
+	.line-3 {
+		top: 50%;
+		left: 50%;
+		width: 110px;
+		transform: translate(-50%, -50%) rotate(90deg);
+		animation-delay: 1.5s;
+	}
+
+	.line-4 {
+		top: 50%;
+		left: 50%;
+		width: 110px;
+		transform: translate(-50%, -50%) rotate(180deg);
+		animation-delay: 2.25s;
+	}
+
+	.integration-node:hover {
+		background: 
+			radial-gradient(circle, rgba(245, 208, 66, 0.3) 0%, rgba(245, 208, 66, 0.1) 100%);
+		border-color: rgba(245, 208, 66, 0.6);
+		color: #F5D042;
+		transform: scale(1.1);
+		box-shadow: 0 0 30px rgba(245, 208, 66, 0.4);
+	}
+
+	.integration-node.top:hover { transform: translateX(-50%) scale(1.1); }
+	.integration-node.right:hover { transform: translateY(-50%) scale(1.1); }
+	.integration-node.bottom:hover { transform: translateX(-50%) scale(1.1); }
+	.integration-node.left:hover { transform: translateY(-50%) scale(1.1); }
+
+	@media (max-width: 768px) {
+		.integrations {
+			padding: 5rem 1rem;
+		}
+
+		.integrations-content {
+			padding: 3rem 2rem;
+		}
+
+		.integration-visual {
+			width: 200px;
+			height: 200px;
+		}
+
+		.integration-node {
+			width: 45px;
+			height: 45px;
+		}
+
+		.integration-node.center {
+			width: 60px;
+			height: 60px;
+		}
+
+		.connection-line {
+			width: 80px;
+		}
+
+		.line-1, .line-2, .line-3, .line-4 {
+			width: 80px;
+		}
+	}
+</style>
